@@ -2,34 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Epilogue">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Intro section with dropdown navigation | By Ileana 'Lee' Salazar Chavez</title>
 </head>
 <body>
+    <div class="top-banner">
+      <header>
+        <a href="index.html"><img src="images/logo.svg" alt="Snap"></a>
+      </header>
 
-  Features
-  Company
-  Careers
-  About
+      <!--Nav bar-->
+        <div class="navbar">
+          <div class="dropdown">
+            <button class="dropbtn">
+                <div class="text">Features</div>
+                <div class="arrow-down"><img src="images/icon-arrow-down.svg"></div>
+                <div class="arrow-up"><img src="images/icon-arrow-up.svg"></div>
+            </button>
+            <div class="dropdown-content">
+                    <a href="#">
+                    <div class="icon"><img src="images/icon-todo.svg"></div>
+                    <div class="text">Todo List</div></a>
+                
+                
+                <a href="#">
+                <div class="icon"><img src="images/icon-calendar.svg"></div>
+                <div class="text">Calendar</div></a>
+                
+                <a href="#">
+                <div class="icon"><img src="images/icon-reminders.svg"></div>
+                <div class="text">Reminders</div></a>
+                
+                <a href="#">
+                <div class="icon"><img src="images/icon-planning.svg"></div>
+                <div class="text">Planning</div></a>
+            </div>
+          </div>
+            
+          <div class="dropdown">
+            <button class="dropbtn">
+                <div class="text">Company</div>
+                <div class="arrow-down"><img src="images/icon-arrow-down.svg"></div>
+                <div class="arrow-up"><img src="images/icon-arrow-up.svg"></div>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">History</a>
+              <a href="#">Our Team</a>
+              <a href="#">Blog</a>
+            </div>
+          </div>
+            
+          <a href="#careers">Careers</a>
+          <a href="#about">About</a> 
+            
+          <div class="members">
+            <a href="#careers">Login</a>
+            <a href="#careers">Register</a>
+          </div>
+        </div>
+    </div>
+  <main>
+      <div class="container">
+        <div class="row">
+            <div class="column1">
+                <h1>Make <br> remote work</h1>
+                    <p>Get your team in sync, no matter your location. Streamline processes, 
+                    create team rituals, and watch productivity soar.</p>
+                 <button>Learn more</button>
+            </div>
+            
+            <div class="column2">
+                <img class="hero" src="images/image-hero-desktop.png" alt="Snap">
+            </div>
+        </div>
+      </div>
 
-  Login
-  Register
 
-  Make remote work
+  </main>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
